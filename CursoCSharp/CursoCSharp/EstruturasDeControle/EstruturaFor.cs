@@ -17,10 +17,11 @@ namespace CursoCSharp.EstruturasDeControle
             Console.WriteLine("Quantos bimestres já foram concluídos ?");
             entrada = Console.ReadLine();
             int.TryParse(entrada, out NotaBimestre);
+           
 
-            //if (entrada >= 5 ){
-               // Console.WriteLine("Número de bimestres inválido!");
-            //}
+            if (NotaBimestre >= 5 ){
+                Console.WriteLine("Número de bimestres inválido!");
+            }
                 for (int i = 1; i <= NotaBimestre; i++)
             {
                 Console.WriteLine("Informe a nota alcançada no bimestre {0}: ", i);
